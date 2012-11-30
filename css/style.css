@@ -73,7 +73,7 @@ a:link { -webkit-tap-highlight-color: #FF5E99; }
 button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
-body, select, input, textarea {  color: #ffffff; }
+body, select, input, textarea {  color: #EEE; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 a, a:active, a:visited { color: #ace; }
 a:hover { color: #dd6; }
@@ -102,7 +102,7 @@ h1 {font-size:36px}
   max-height:700px;
 }
 body{
-  background-color:#181818;
+  background-color:#233;
 }
 #body {
   position:absolute;

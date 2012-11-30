@@ -1,5 +1,7 @@
 <div id="body">
 
+  {{! ============================================================================ }}
+
   <div id="header">
     <h1>Surprise, Little Bug!</h1>
     <div class="subtitle">
@@ -8,9 +10,13 @@
     </div>
   </div>
 
+  {{! ============================================================================ }}
+
   <div id="status">
     Currently we are in the <strong>Modeling Stage</strong>
   </div>
+
+  {{! ============================================================================ }}
 
   <div id="sidebar">
     {{#each sections}}
@@ -18,35 +24,50 @@
     {{/each}}
   </div>
 
+  {{! ============================================================================ }}
+
   <div class="page" id="about">
     <div class="header">About</div>
     <div class="body">
-      <div>This project is a collaborative effort by the members of the Boston Blender User Group.  We meet every Thursday to discuss and learn about Blender, an open source program for 3D modeling, animation and much more.  Our main goal is to create a short animation and in the process learn a ton about Blender and working as a group.
+      <div class="p">This project is a collaborative effort by the members of the Boston Blender User Group.  We meet every Thursday to discuss and learn about Blender, an open source program for 3D modeling, animation and much more.  Our main goal is to create a short animation and in the process learn a ton about Blender and working as a group.
       </div>
       <div id="people">
         <div class="header">People working in the project</div>
         <div class="body">
           <ul>
-            {{#each people}}<li><a href="http://www.bostonblender.com/members/{{mid}}">{{name}}</a></li>{{/each}}
+            {{#each people_list}}<li>{{user_link this}}</li>{{/each}}
           </ul>
         </div>
       </div>
     </div>
   </div>
 
+  {{! ============================================================================ }}
+
   <div class="page" id="storyboard">
     <div class="p">
       A storyboard is a very useful pre-production tool for creating films and animations.  It is normally a sequence of images used to pre-visualize the animation. It helps to give you an idea of what the shots will look like and find design problems early in the process, before any 3D modeling has been done.
     </div>
     <div class="p">
-      The storyboard for our project was made by me, Engel Sanchez.  Special thanks go to Patrick Crawford, who provided tons of feedback on the first versions and helped me tweak it and improve it quite a bit.  That is the beauty of storyboards: at that stage of the game you can correct a lot of with lots of input from Patrick Crawford.  The images were created using Inkscape and animated in the Blender Video Sequencer.
+      The storyboard for our project was made by me, {{user_link people.engel}}.  Special thanks go to Patrick Crawford, who provided tons of feedback on the first versions and helped me tweak it and improve it quite a bit.  That is the beauty of storyboards: at that stage of the game you can correct a lot of with lots of input from Patrick Crawford.  The images were created using Inkscape and animated in the Blender Video Sequencer.
     </div>
 
     <div class="video">
-    <iframe src="http://www.youtube.com/embed/Y3DRqrhERME?list=UUIvWe_d4BRWArSMt2gncl_g&amp;hl=en_US" width="470" height="264" ></iframe>
-  </div>
+      <iframe src="http://www.youtube.com/embed/Y3DRqrhERME?list=UUIvWe_d4BRWArSMt2gncl_g&amp;hl=en_US" width="470" height="264" ></iframe>
+    </div>
 
   </div>
+
+  {{! ============================================================================ }}
+
+  <div class="page" id="modeling">
+    <div class="header">Modeling</div>
+    <div class="p">
+      Below is the list of models for the project and the people who worked or are working on them.  If you want to work on something that has not been finished yet or tweak an existing model that nobody is working on, please <a href="">contact me</a>!
+    </div>
+  </div>
+
+  {{! ============================================================================ }}
 
   <div id="footer">
   </div>

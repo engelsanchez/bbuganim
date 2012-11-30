@@ -1,4 +1,11 @@
 $(function(){
+  Handlebars.registerHelper('user_link', function(person) {
+      return new Handlebars.SafeString(
+            "<a href='http://www.bostonblender.com/members/" + person.mid + "'>" 
+            + person.name + "</a>"
+        );
+  });
+
   $.get("tpl/main.handlebars", function(mainTpl){
     var bodyTpl = Handlebars.compile(mainTpl);
     $("body").append(bodyTpl(data));
