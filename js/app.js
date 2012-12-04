@@ -1,4 +1,8 @@
 $(function(){
+  Handlebars.registerHelper('user_url', function(person) {
+      return new Handlebars.SafeString("http://www.bostonblender.com/members/" + person.mid);
+  });
+
   Handlebars.registerHelper('user_link', function(person) {
       return new Handlebars.SafeString(
             "<a href='http://www.bostonblender.com/members/" + person.mid + "'>" 
@@ -22,7 +26,6 @@ $(function(){
           }
           console.log("Showing "+newSec);
           $(secId = newSec).show(0);
-          console.log("You should see "+$(secId).html());
       }
   };
   $(window).on('hashchange', switchSec);

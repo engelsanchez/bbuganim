@@ -19,8 +19,8 @@
   {{! ============================================================================ }}
 
   <div id="sidebar">
-    {{#each sections}}
-      <li><a href="#{{id}}">{{label}}</a></li>
+    {{#each section_list}}
+      <div class="li"><a href="#{{id}}">{{label}}</a></div>
     {{/each}}
   </div>
 
@@ -55,7 +55,6 @@
     <div class="video">
       <iframe src="http://www.youtube.com/embed/Y3DRqrhERME?list=UUIvWe_d4BRWArSMt2gncl_g&amp;hl=en_US" width="470" height="264" ></iframe>
     </div>
-
   </div>
 
   {{! ============================================================================ }}
@@ -63,7 +62,23 @@
   <div class="page" id="modeling">
     <div class="header">Modeling</div>
     <div class="p">
-      Below is the list of models for the project and the people who worked or are working on them.  If you want to work on something that has not been finished yet or tweak an existing model that nobody is working on, please <a href="">contact me</a>!
+      Below is the list of models for the project and the people who worked or are working on them.  If you want to work on something that has not been finished yet or tweak an existing model that nobody is working on, please <a href="{{user_url people.engel}}">contact me</a>!
+    </div>
+    <div class="model-list">
+      {{#each model_list}}
+        <div class="model">
+          <span class="model-name">{{name}}</span>
+          {{#each current}}
+            <span class="current-modeler">{{user_link this}}</span>
+          {{/each}}
+          {{^all_modelers}}
+            <span>TBD</span>
+          {{/all_modelers}}
+          {{#each past}}
+            <span class="past-modeler">{{user_link this}}</span>
+          {{/each}}
+        </div>
+      {{/each}}
     </div>
   </div>
 

@@ -88,7 +88,7 @@ a:hover { color: #dd6; }
 a{ text-decoration:none}
 a:hover{text-decoration:underline}
 
-h1 {font-size:36px}
+h1 {font-size:300%}
 .p {
   margin:8px 0;
   text-indent:15px;
@@ -102,12 +102,12 @@ h1 {font-size:36px}
   max-height:700px;
 }
 body{
-  background-color:#233;
+  background-color:#111;
 }
 #body {
   position:absolute;
   width:600px;
-  left:200px;
+  left:260px;
   top:20px;
   border-top: 2px solid #ccc;
   padding:0px;
@@ -139,21 +139,22 @@ body{
 
 #sidebar{
   position:fixed;
-  padding:20px;
+  padding:20px 10px;
   top:20px;
   left:20px;
-  width:120px;
+  width:180px;
   border-top: 2px solid #BBB;
   border-bottom: 2px solid #BBB;
   z-index:-10;
 }
 
-#sidebar li {
+#sidebar .li {
   padding:2px;
   margin: 10px 10px;
+  text-align: center;
 }
 
-
+.model-name{width:180px;display:inline-block;}
 
 
 
