@@ -13,21 +13,23 @@ $(function(){
   $.get("tpl/main.handlebars", function(mainTpl){
     var bodyTpl = Handlebars.compile(mainTpl);
     $("body").append(bodyTpl(data));
+    window.location.hash || (window.location.hash = data.default_section);
     switchSec();
   });
   var secId = null;
   var switchSec = function() {
       var newSec = window.location.hash;
-      console.log("Hash is "+newSec);
+      console.log("newSec = "+newSec);
       if (secId != newSec) {
+        console.log("Changed");
           if (secId) { 
             $(secId).hide(0);
-            console.log("Hiding "+secId);
           }
-          console.log("Showing "+newSec);
           $(secId = newSec).show(0);
       }
+      $(".nav-li").removeClass("nav-selected");
+      console.log(newSec.substr(1));
+      $("#nav-"+newSec.substr(1)).addClass("nav-selected");
   };
   $(window).on('hashchange', switchSec);
-  window.location.hash || (window.location.hash = data.default_section);
 });

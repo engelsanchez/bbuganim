@@ -2,7 +2,6 @@
 /* ==== Scroll down to find where to put your styles :) ==== */
 
 /*  HTML5 ✰ Boilerplate  */
-
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
@@ -87,10 +86,15 @@ a:hover { color: #dd6; }
 */
 a{ text-decoration:none}
 a:hover{text-decoration:underline}
+.nav-selected a { color: black;}
+.nav-selected { 
+  background-color:#ace;
+  border-radius:4px
+}
 
 h1 {font-size:300%}
 .p {
-  margin:8px 0;
+  margin: 1em 0 2em;
   text-indent:15px;
   text-align:justify;
 }
@@ -130,11 +134,15 @@ body{
   font-style:italic;
   padding:8px 0;
 }
+#status strong { 
+  text-decoration:underline
+}
 
 .page {
   display:none;
   padding:15px;
   border-bottom: 2px solid #ccc;
+  font-size:110%;
 }
 
 #sidebar{
@@ -148,19 +156,64 @@ body{
   z-index:-10;
 }
 
-#sidebar .li {
-  padding:2px;
-  margin: 10px 10px;
+#sidebar .nav-li {
+  padding:7px;
+  margin: 0px 10px;
   text-align: center;
 }
 
-.model-name{width:180px;display:inline-block;}
+.header {
+  font-size:200%; 
+  font-weight:bolder;
+  text-align:center;
+  margin:.1em 0 .5em;
+}
 
+.model-name{
+  width:180px;
+  display:inline-block;
+  font-size:150%;
+  font-weight:bold;
+}
 
+.current-modeler, .past-modeler {
+  font-size:120%;
+  font-weight:600;
+}
 
+.model {
+  margin: .8em 0;
+  padding: 8px 0;
+  border-top: 1px solid #555;
+}
+.li-name{
+  display:inline-block;
+  float:left;
+  width:170px;
+  height:40px;
+}
+.body.process .li { display: block; margin:.7em 0;}
 
+.body.process .li:before, .body.process .li:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.body.process .li:after { clear: both; }
+.body.process .li { zoom: 1; }
 
+.scene-name{
+  width:240px;
+  display:inline-block;
+  font-size:120%;
+  font-weight:bold;
+}
+.scene{
+  margin: .8em 0;
+  padding: 8px 0;
+  border-top: 1px solid #555;
+}
+.scene { display: block; margin:.7em 0;}
 
+.scene:before, .scene:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.scene:after { clear: both; }
+.scene { zoom: 1; }
 
 
 

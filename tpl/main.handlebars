@@ -1,7 +1,5 @@
 <div id="body">
 
-  {{! ============================================================================ }}
-
   <div id="header">
     <h1>Surprise, Little Bug!</h1>
     <div class="subtitle">
@@ -10,21 +8,15 @@
     </div>
   </div>
 
-  {{! ============================================================================ }}
-
   <div id="status">
     Currently we are in the <strong>Modeling Stage</strong>
   </div>
 
-  {{! ============================================================================ }}
-
   <div id="sidebar">
     {{#each section_list}}
-      <div class="li"><a href="#{{id}}">{{label}}</a></div>
+    <div class="nav-li" id="nav-{{id}}"><a href="#{{id}}">{{label}}</a></div>
     {{/each}}
   </div>
-
-  {{! ============================================================================ }}
 
   <div class="page" id="about">
     <div class="header">About</div>
@@ -42,22 +34,31 @@
     </div>
   </div>
 
-  {{! ============================================================================ }}
+  <div class="page" id="process">
+    <div class="header">The Process</div>
+    <div class="body process">
+      <span class="li"><span class="li-name"><a href="#storyboard">Storyboard</a></span>  First a simple storyboard is created using 2D images to get a feel for the shots and flow of the animation.</span>
+      <span class="li"><span class="li-name"><a href="#modeling">Modeling</a></span>  Create all the 3D models, texture and rig them to prepare them for animation.</span>
+      <span class="li"><span class="li-name"><a href="#blockanim">Blocking Animation</a></span>  With the 3D models, create a Blocking Animation. That is, everything is animated at the object level: no arm, leg or wing motions.  Tweak until it looks reasonable.</span>
+      <span class="li"><span class="li-name"><a href="#animation">Animation stage</a></span>  Add detailed animation of all the characters and moving props. This is the meat of the process.</span>
+      <span class="li"><span class="li-name"><a href="#audio">Audio</a></span>  This short does not involve dialogue, otherwise that would have been worked on first to be able to synchronize the mouth animation to the dialogue.</span>
+      <span class="li"><span class="li-name"><a href="#render">Post-process and render</a></span>  Tweak the lighting, rendering parameters, colors, etc until we arrive at the final product. </span>
+    </div>
+  </div>
 
   <div class="page" id="storyboard">
+    <div class="header">Storyboard</div>
     <div class="p">
       A storyboard is a very useful pre-production tool for creating films and animations.  It is normally a sequence of images used to pre-visualize the animation. It helps to give you an idea of what the shots will look like and find design problems early in the process, before any 3D modeling has been done.
     </div>
     <div class="p">
-      The storyboard for our project was made by me, {{user_link people.engel}}.  Special thanks go to Patrick Crawford, who provided tons of feedback on the first versions and helped me tweak it and improve it quite a bit.  That is the beauty of storyboards: at that stage of the game you can correct a lot of with lots of input from Patrick Crawford.  The images were created using Inkscape and animated in the Blender Video Sequencer.
+      The storyboard for our project was made by me, {{user_link people.engel}}.  Special thanks go to {{user_link people.patrick }}, who provided tons of feedback and helped me tweak it and improve it quite a bit.  That is the beauty of storyboards: at that stage of the game you can correct a lot of with lots of input from Patrick Crawford.  The images were created using Inkscape and animated in the Blender Video Sequencer.
     </div>
 
     <div class="video">
       <iframe src="http://www.youtube.com/embed/Y3DRqrhERME?list=UUIvWe_d4BRWArSMt2gncl_g&amp;hl=en_US" width="470" height="264" ></iframe>
     </div>
   </div>
-
-  {{! ============================================================================ }}
 
   <div class="page" id="modeling">
     <div class="header">Modeling</div>
@@ -82,7 +83,63 @@
     </div>
   </div>
 
-  {{! ============================================================================ }}
+  <div class="page" id="blockanim">
+    <div class="header">Blocking Animation</div>
+    <div class="body">
+      <div class="p">
+        As soon as the first version of all models are finished, a Blocking Animation will be created.  For this, the main characters don&apos;t need to be rigged. Models and props will be animated at the object level. That is, no movement of limbs, etc. Imagine that you are playing with old fashioned, stiff toy soldiers. This rough animation helps you pace the scenes and placement of objects, etc before too much time consuming detail has been added. We are doing the animation in layers of increasing complexity so we can fix problems early and save us a lot of work.
+      </div>
+      <div class="p">
+        We&apos;ll post a video with the Blocking Animation shortly after modeling is done!
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="animation">
+    <div class="header">Animation</div>
+    <div class="body">
+      <div class="p">
+        Now we need all the characters properly rigged to start the meat of the project.  The focus will be in creating realistic motion, while in the process tweaking the rigs to make sure that they deform in a visually pleasing way when animated.
+      </div>
+      <div class="p">
+        Each scene in the short animation will be worked on by one person at a time. This page will list the assignments once we get to that stage.
+      </div>
+      <div class="scene-list">
+        {{#each scene_list}}
+        <div class="scene">
+          <span class="scene-name">{{name}}</span>
+          <span class="scene-current">TBD</span>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="audio">
+    <div class="header">Audio</div>
+    <div class="body">
+      <div class="p">
+        Somewhere in between the blocking animation and proper animation stage we will be adding music and sound effects. This will probably not be done as a collaboration due to the nature of the work. Most likely a single person or a few people will be involved. If you are interested, please <a href="{{user_url people.engel}}">let me know</a>!!
+      </div>
+    </div>
+  </div>
+  <div class="page" id="render">
+    <div class="header">Post-process and Render</div>
+    <div class="body">
+      <div class="p">
+        Just like the audio work, preparations for the final rendering to video will most likely be done by a single person or small group. If you are interested, please <a href="{{user_url people.engel}}">let me know</a>!!
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="final">
+    <div class="header">Final Video</div>
+    <div class="body">
+      <div class="p">
+        We will post the final animation video here when it&apos;s finished!
+      </div>
+    </div>
+  </div>
 
   <div id="footer">
   </div>
