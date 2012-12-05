@@ -13,8 +13,10 @@ $(function(){
   $.get("tpl/main.handlebars", function(mainTpl){
     var bodyTpl = Handlebars.compile(mainTpl);
     $("body").append(bodyTpl(data));
-    window.location.hash || (window.location.hash = data.default_section);
-    switchSec();
+		_.defer(function() {
+    		window.location.hash || (window.location.hash = data.default_section);
+    		switchSec();
+			});
   });
   var secId = null;
   var switchSec = function() {
