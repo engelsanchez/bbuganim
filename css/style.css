@@ -215,7 +215,13 @@ body{
 .scene:after { clear: both; }
 .scene { zoom: 1; }
 
-
+.copyleft {
+  text-align:center;
+  padding: 12px;
+}
+.subtitle .license {
+  float:right;
+}
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }
