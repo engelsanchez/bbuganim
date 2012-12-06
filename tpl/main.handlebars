@@ -3,7 +3,7 @@
   <div id="header">
     <h1>Surprise, Little Bug!</h1>
     <div class="subtitle">
-      <a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" title="This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License." style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>
+      <div><a class="license" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" title="This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License." style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a></div>
       <div class="subtitle1">A short animation project by the</div>
       <div class="subtitle2"><a href="http://bostonblender.com">Boston Blender User Group</a></div>
     </div>
@@ -82,6 +82,11 @@
           {{#each past}}
             <span class="past-modeler">{{user_link this}}</span>
           {{/each}}
+          <div class="model-images">
+            {{#each images}}
+            <div class="model-image"><img src="img/{{this}}"/></div>
+            {{/each}}
+          </div>
         </div>
       {{/each}}
     </div>
@@ -127,6 +132,7 @@
       </div>
     </div>
   </div>
+
   <div class="page" id="render">
     <div class="header">Post-process and Render</div>
     <div class="body">

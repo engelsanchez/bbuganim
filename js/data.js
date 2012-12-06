@@ -12,21 +12,21 @@ var people_rows = [
 ];
 
 var model_rows = [
-    ["id",        "name",       "multi",  "current",        "past"    ]
+    ["id",        "name",       "multi",  "images",               "current",        "past"    ]
 
-    ,["butterfly", "Butterfly",  false,   ["gabriell"],     []        ]
-    ,["ladybug",   "Ladybug",    false,   [],               []        ]
-    ,["ant",       "Ant",        false,   ["igor"],         []        ]
-    ,["beetle",    "Beetle",     false,   [],               []        ]
-    ,["dragonfly", "Dragonfly",  false,   ["dave"],         []        ]
-    ,["bird",      "Bird",       false,   ["patrick"],      []        ]
-    ,["house",     "House",      false,   ["domenic"],      []        ]
-    ,["grain",     "Grain",      false,   [],               []        ]
-    ,["broom",     "Broom",      false,   [],               []        ]
-    ,["trees",     "Trees",      true,    [],               []        ]
-    ,["flowers",   "Flowers",    true,    ["domenic"],      []        ]
-    ,["grass",     "Grass",      true,    [],               []        ]
-    ,["rocks",     "Rocks",      true,    [],               []        ]
+    ,["butterfly", "Butterfly",  false,   ["Butterfly.png"],      ["gabriell"],     []        ]
+    ,["ladybug",   "Ladybug",    false,   [],                     [],               []        ]
+    ,["ant",       "Ant",        false,   ["Ant.png"],            ["igor"],         []        ]
+    ,["beetle",    "Beetle",     false,   [],                     [],               []        ]
+    ,["dragonfly", "Dragonfly",  false,   ["Dragonfly.png"],      ["dave"],         []        ]
+    ,["bird",      "Bird",       false,   ["Bird.png"],           ["patrick"],      []        ]
+    ,["house",     "House",      false,   ["Mushroom_House.png"], ["domenic"],      []        ]
+    ,["grain",     "Grain",      false,   [],                     [],               []        ]
+    ,["broom",     "Broom",      false,   [],                     [],               []        ]
+    ,["trees",     "Trees",      true,    [],                     [],               []        ]
+    ,["flowers",   "Flowers",    true,    [],                     ["domenic"],      []        ]
+    ,["grass",     "Grass",      true,    [],                     [],               []        ]
+    ,["rocks",     "Rocks",      true,    [],                     [],               []        ]
 ];
 
 var section_rows = [
