@@ -16,6 +16,11 @@ $(function(){
 		_.defer(function() {
     		window.location.hash || (window.location.hash = data.default_section);
     		switchSec();
+				$(".nav-li a").click(function(){
+					window.location.hash = $(this).attr("href").substr(1);
+					switchSec();
+					return false;
+				});
 			});
   });
   var secId = null;
