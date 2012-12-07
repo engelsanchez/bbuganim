@@ -9,6 +9,7 @@ var people_rows = [
     ,["patrick",  "Patrick Crawford",       54731932  ] 
     ,["domenic",  "Domenic Smarra",         26041982  ]
     ,["dave",     "Dave",                   6323245   ]
+		,["lazarus",	"Lazbarus Mornison",			14030366  ]
 ];
 
 var model_rows = [
@@ -26,7 +27,7 @@ var model_rows = [
     ,["trees",     "Trees",      true,    [],                     [],               []        ]
     ,["flowers",   "Flowers",    true,    [],                     ["domenic"],      []        ]
     ,["grass",     "Grass",      true,    [],                     [],               []        ]
-    ,["rocks",     "Rocks",      true,    [],                     [],               []        ]
+    ,["rocks",     "Rocks",      true,    [],                     ["lazarus"],               []        ]
 ];
 
 var section_rows = [
