@@ -26,16 +26,16 @@ $(function(){
   var secId = null;
   var switchSec = function() {
       var newSec = window.location.hash;
-      console.log("newSec = "+newSec);
+      //console.log("newSec = "+newSec);
       if (secId != newSec) {
-        console.log("Changed");
+        //console.log("Changed");
           if (secId) { 
             $(secId).hide(0);
           }
           $(secId = newSec).show(0);
       }
       $(".nav-li").removeClass("nav-selected");
-      console.log(newSec.substr(1));
+      //console.log(newSec.substr(1));
       $("#nav-"+newSec.substr(1)).addClass("nav-selected");
   };
   $(window).on('hashchange', switchSec);
