@@ -24,10 +24,10 @@ var model_rows = [
     ,["house",     "House",      false,   ["Mushroom_House.png"], ["domenic"],      []        ]
     ,["grain",     "Grain",      false,   [],                     [],               []        ]
     ,["broom",     "Broom",      false,   [],                     [],               []        ]
-    ,["trees",     "Trees",      true,    [],                     [],               []        ]
-    ,["flowers",   "Flowers",    true,    [],                     ["domenic"],      []        ]
+    ,["trees",     "Trees",      true,    [],                     ["domenic"],               []        ]
+    ,["flowers",   "Flowers",    true,    ["Flowers.png"],                     ["domenic"],      []        ]
     ,["grass",     "Grass",      true,    [],                     [],               []        ]
-    ,["rocks",     "Rocks",      true,    [],                     ["lazarus"],               []        ]
+    ,["rocks",     "Rocks",      true,    ["Rocks.png"],                     ["domenic", "lazarus"],               []        ]
 ];
 
 var section_rows = [
