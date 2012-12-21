@@ -76,9 +76,11 @@
       {{#each model_list}}
         <div class="model">
           <span class="model-name">{{name}}</span>
+					<span class="current-modelers">
           {{#each current}}
             <span class="current-modeler">{{user_link this}}</span>
           {{/each}}
+					</span>
           {{^all_modelers}}
             <span>TBD</span>
           {{/all_modelers}}

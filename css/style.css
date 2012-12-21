@@ -181,6 +181,12 @@ body{
   font-weight:600;
 }
 
+.current-modeler:after {
+content: ','
+}
+.current-modeler:last-child:after {
+content: ''
+}
 .model {
   margin: .8em 0;
   padding: 8px 0;
