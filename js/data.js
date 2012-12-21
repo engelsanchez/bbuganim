@@ -23,7 +23,7 @@ var model_rows = [
     ,["dragonfly", "Dragonfly",  false,   ["Dragonfly.png"],      ["dave"],         []        ]
     ,["bird",      "Bird",       false,   ["Bird.png"],           ["patrick"],      []        ]
     ,["house",     "House",      false,   ["Mushroom_House.png"], ["domenic"],      []        ]
-    ,["grain",     "Grain",      false,   [],                     [],               []        ]
+    ,["grain",     "Grain",      false,   [],                     ["domenic"],               []        ]
     ,["broom",     "Broom",      false,   [],                     ["dave"],         []        ]
     ,["trees",     "Trees",      true,    [],                     ["domenic"],      []        ]
     ,["flowers",   "Flowers",    true,    ["Flowers.png"],        ["domenic"],      []        ]
